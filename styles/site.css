@@ -1,0 +1,26 @@
+nav{
+    display: inline;  
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    margin: 0;
+    padding: 10px;
+    display: inline;
+  }
+
+  nav li .button{
+    background: #eeffff ;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+
+
+  
