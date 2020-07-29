@@ -26,17 +26,42 @@
   }
 
 
-  function logIn(){
+    function logIn(){
     var email= document.getElementById("email");
     var password= document.getElementById("password");
 
     const promise= auth.signInWithEmailAndPassword(email.value, password.value);
-    promise.catch(e => alert(e.message));
+    // var errorCode = error.code;
+    // var errorMessage = error.message;
+    // promise.catch(errorCode => alert(errorMessage));
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        if (errorCode === 'auth/wrong-password') {
+          alert('Wrong password.');
+        } else {
+          alert(errorMessage);
+        }
+        console.log(error);
 
-    alert("Logged In");
+    //alert("Logged In" + email.value);
+    }
+
+    function SignOut(){
+        auth.SignOut();
+        alert("Signed Out");
 }
 
-auth.onAuthStateChanged(function(user){
 
-});
+ auth.onAuthStateChanged(function(user) {
+     if(user) {
+       var email = user.email;
+	   //alert("Active User " + email);
+
+       window.location.href = 'home.html'; //After successful login, user will be redirected to home.html
+     }
+     else {
+         console.log('NOT SIGNED IN');
+         }
+ });
 
