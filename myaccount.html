@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" type="text/css" href="styles/site.css" media="all" />
   <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <header>
@@ -34,6 +35,27 @@
 
 <body>
 
+
+            <!-- <input type="file" accept="image/*">
+            <button type="button" id="previewBtn">Upload</button> -->
+
+            <div class="row">
+                <div class="small-12 medium-2 large-2 columns">
+                  <div class="circle">
+                    <!-- Default Image -->
+                    <div class="defaultpfp">
+                    <i class="fa fa-user fa-5x"></i>
+                    </div>
+                  </div>
+                  <div class="p-image">
+                    <i class="fa fa-camera upload-button"></i>
+                     <input class="file-upload" onclick="pfp()" type="file" accept="image/*"/>
+                  </div>
+               </div>
+             </div>
+             <button type="button" id="uploadpfp">Upload Profile Picture</button> 
+            
+            
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
     <script>
