@@ -1,32 +1,11 @@
-/* #logo{ 
-	position:fixed; 
-	top:0; 
-	left:0; 
-} 
 
-nav{
-    display: inline;  
-} */
-
-/* nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  nav li {
-    margin: 0;
-    padding: 10px;
-    display: inline;
-  }
-
-  nav li .button{
-    background: #eeffff ;
-    padding: 10px 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-  } */
-
+body{
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
   nav li,a,button{
     font-family: sans-serif;
     font-weight: 500;
@@ -35,6 +14,10 @@ nav{
     text-decoration: none;
   }
 
+  #firstline{
+    justify-content: space-between;
+    padding-right: 600px;
+  }
   header{
     display: flex;
     justify-content: space-between;
@@ -46,7 +29,7 @@ nav{
     cursor: pointer;
   }
 
-  .nav_items{
+  .nav_items, .nav_links{
     list-style: none;
   }
 
@@ -55,11 +38,16 @@ nav{
     padding:0px 20px;
   }
 
-  .nav_items li a{
+  .nav_links li{
+    display:inline-block;
+    padding:0px 20px;
+  }
+
+  .nav_items li a, .nav_links li a{
     transition: all 0.3s ease 0s;
   }
 
-  .nav_items li a:hover{
+  .nav_items li a:hover, .nav_links li a:hover{
     color: #0088a9;
   }
 
@@ -128,9 +116,58 @@ nav{
     padding: 10px;
   }
 
+
+  /*Log In*/
+  /* .in{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  } */
+/* 
+  #loginform {
+    display: block;
+    text-align:center;
+  } */
+
+  #loginform{
+    width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background:  #Afc2eb;  
+        border-radius: 15px ;
+  }
+
+  #loginform label{  
+    font-size: 17px;
+  }
+
+  #email_field, #password_field{
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+  }
+
+  #loginform button{
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;    
+    padding:0px;
+    background-color: whitesmoke;
+  }
+
+  #loginform button:hover{
+    background-color:rgba(0,135,169,1);
+  }
+
  
   
-  /* , #about, #howitworks, #testimonial */
+
 
   /* body {
     background-color: #efefef;
@@ -191,4 +228,200 @@ nav{
     position: absolute;
   }
 
+  #myt{
+    padding-left: 80px;
+  }
+
+  #mytutors{
+    display: flex;
+    padding-right: 220px;
+padding-left: 50px;
+  }
+
+  #appt{
+    background-color: #Afc2eb;
+    /* padding-left: 40px;
+    padding-right: 10px; */
+  }
+
+  #appt h3{
+    text-align: center;
+  }
+
+  #appt figure, #reviewrecent figure, #avgfilter figure, #tresults figure, #reviewnina figure, #secondline figure, #firstline {
+    display: flex;
+    align-items: center;
+  }
+
+  #appt figure img{
+    padding-right: 5px;
+  }
+
+  #homepg, #tpage, #ninapg, #ninarpg{
+    display: flex;
+  }
+
+  #reviewrecent{
+    display: block;
+    /* width: fit-content; */
+    width:700px;
+    box-sizing: border-box;
+    border: solid;
+    border-color:#Afc2eb ;
+    padding-left: 20px;
+    margin-left: 50px;
+  }
+
+  #reviewsub{
+    text-align: right;
+  }
+
+
+  /* search bar   */
+
+  /* body{
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+  } */
+  
+  .search {
+    /* width: 100%; */
+    padding-left: 80px;
+    padding-top: 10px;
+    width: 700px;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #Afc2eb;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #Afc2eb;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #Afc2eb;
+    background: #Afc2eb;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+#filters{
+  width: 300px;
+  border: solid;
+  border-color: #Afc2eb;
+  margin-top: 30px;
+margin-left: 80px;
+padding-bottom: 10px;;
+/* padding-left: 40px; */
+}
+
+#filters h3, #filters h4{
+  text-align: center;
+}
+/* 
+#avgfilter{
+  border: solid;
+  border-color: #Afc2eb;
+  margin: 10px;
+} */
+
+#restfil{
+  padding-left: 50px;
+}
+
+/* #virtualor{
+  border: solid;
+  border-color: #Afc2eb;
+ 
+} */
+
+#tresults{
+  /* margin-left: 20px; */
+  width: 600px;
+
+}
+
+#tresults h2{
+text-align: left;
+padding-left: 20px;
+}
+
+#tpfp{
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+.table{
+  border: solid;
+  border-color: #Afc2eb;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+#reviewnina{
+  margin-top: 60px;
+  text-align: center;
+  display: block;
+  /* width: fit-content; */
+  width:300px;
+  box-sizing: border-box;
+  /* border: solid;
+  border-color:#Afc2eb ; */
+  padding-left: 10px;
+  margin-left: 50px;
+}
+
+#leaver{
+  border: solid;
+  border-color:#Afc2eb ;
+  text-align: center;
+}
+
+/* #leaver textarea{
+  padding-left: 10px;
+} */
+
+#comment{
+  border: solid;
+  border-color:#Afc2eb ;
+  padding: 5px;
+}
+
+#oldreviews{
+  margin-left: 300px;
+  width: 300px;
+  margin-top: 80px;
+}
+
+#info{
+  display:block;
+}
+
+
+
+  
+
+
+  
   

@@ -13,27 +13,37 @@
 </head>
 
 <header>
-  <h1 class="title">winnect</h1>
+  <img class= "logo" img src="images/logo.png" alt="logo"/>
+    
 
   <nav>
-    <ul>
-      <li ><a href="#about">About</a></li>
-      <li><a href="#howitworks">How It works</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="login.html" class=button>Log In</a></li>
-       <li> <a href= "signup.html" class=button>Sign Up</a></li>
+    <ul class="nav_items">
+      <li ><a href= "#bigabout">About</a></li>
+      <li><a href="#bighiw">How It Works</a></li>
+      <li><a href="#bigtest">Testimonials</a></li>
+      <!-- <li><a href="login.html" class=button>Log In</a></li>
+       <li> <a href= "signup.html" class=button>Sign Up</a></li> -->
     </ul>
 </nav>
+<div>
+  <a class="logsig" href="login.html"><button>Log In</button></a>
+  <a class="logsig" href="login.html"><button>Sign Up</button></a>
+  </div>
 </header>
 
 <body>
-
-    <h1>Log In/Sign Up</h1>
+    <div class="in">
+    <h2>Log In</h2>
     <div id=loginform>
+      <label>Username:</label>
     <input type="email" placeholder="username" id="email_field">
+    <br><br>
+    <label>Password:</label>
     <input type="password" placeholder="password" id="password_field">
+    <br><br>
     <!-- <button onclick="signUp()" id="signUp()">Sign Up</button> -->
-    <button onclick="logIn()" id="logIn()">LogIn</button>
+    <button onclick="logIn()" id="logIn">Log In</button>
+    </div>
     </div>
 
 

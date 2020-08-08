@@ -9,30 +9,136 @@
 
   <link rel="stylesheet" type="text/css" href="styles/site.css" media="all" />
   <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
 </head>
 
 <header>
-  <h1 class="title">winnect</h1>
+  <img class= "logo" img src="images/logo.png" alt="logo"/>
+    
 
   <nav>
-    <ul>
+    <ul class="nav_links">
       <li ><a href="home.html">Home</a></li>
       <li><a href="search.html">Search</a></li>
       <li><a href="messages.html">Messages</a></li>
       <li><a href="notifications.html">Notifications</a></li>
-        <li>Me
+      <li><a href="#">My Account</a></li>
+      <li><a href="#">Become a Tutor</a></li>
+      
+      <!-- <div class="dropdown">
+      <li><img src="images/me.png" alt="me"></li>
+      <div class="dropdown-content">
+        <li><a href="#">My Account</a></li>
+          <li><a href="#">Become a Tutor</a></li>
+          <li><a href="index.html"><button onclick="signOut()" id="signOut()">Log Out</button></li>
+      </div>
+      </div> -->
+        <!-- <li>Me
             <ul>
           <li><a href="#">My Account</a></li>
           <li><a href="#">Become a Tutor</a></li>
           <li><a href="index.html"><button onclick="signOut()" id="signOut()">Log Out</button></li>
         </ul>
-        </li>
+        </li> -->
         </ul>
+        <!-- <img src="images/me.png" alt="me"> -->
+    
       
 </nav>
+
+</div>
+<a href="index.html"><button onclick="signOut()" id="signOut()">Log Out</button></a>
+</div>
+
 </header>
 
+
 <body>
+
+  <h3 id= "myt">My Tutors</h3> 
+  <div id="homepg">
+
+ 
+
+  <div id="mytutors">
+  <figure>
+    <img src="images/tutorone.png" alt="tutor">
+    <figcaption> Jane Doe</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/tutortwo.png" alt="tutor">
+    <figcaption> John Doe</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/tutorthree.png" alt="tutor">
+    <figcaption> Beth Doe</figcaption>
+  </figure>
+  </div>
+
+
+  <div id= "appt">
+  <h3>Upcoming Appointments</h3>
+  <figure>
+    <img src="images/calendar.png" alt="calendar">
+    <figcaption>March 15- 10:00 AM</figcaption>
+  </figure>
+  <figure>
+    <img src="images/calendar.png" alt="calendar">
+    <figcaption>March 15- 10:00 AM</figcaption>
+  </figure>
+  <figure>
+    <img src="images/calendar.png" alt="calendar">
+    <figcaption>March 15- 10:00 AM</figcaption>
+  </figure>
+  <figure>
+    <img src="images/calendar.png" alt="calendar">
+    <figcaption>March 15- 10:00 AM</figcaption>
+  </figure>
+  </div>
+
+  </div>
+
+
+
+  <div id="reviewrecent">
+  <p>How was your appointment on March 9, 2020? Leave a review for Beth Doe.</p>
+  <figure>
+  <img src="images/me .png" alt="me">
+  <figcaption>
+    <div>Me</div>
+    <div>
+      <img src="images/zerostars.png" alt="rating">
+      </div>
+  </figcaption>
+</figure>
+
+<div>
+  <textarea name="reviewbox" cols="50" rows="5">
+  type a review...
+  </textarea>
+  </div>
+  <div>
+  <button id="reviewsub">Submit</button>
+  </div>
+  </div>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
 
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>

@@ -13,30 +13,171 @@
 </head>
 
 <header>
-  <h1 class="title">winnect</h1>
+  <img class= "logo" img src="images/logo.png" alt="logo"/>
+    
 
   <nav>
-    <ul>
+    <ul class="nav_links">
       <li ><a href="home.html">Home</a></li>
       <li><a href="search.html">Search</a></li>
       <li><a href="messages.html">Messages</a></li>
       <li><a href="notifications.html">Notifications</a></li>
-        <li>Me
+      <li><a href="#">My Account</a></li>
+          <li><a href="#">Become a Tutor</a></li>
+      
+      <!-- <div class="dropdown">
+      <li><img src="images/me.png" alt="me"></li>
+      <div class="dropdown-content">
+        <li><a href="#">My Account</a></li>
+          <li><a href="#">Become a Tutor</a></li>
+          <li><a href="index.html"><button onclick="signOut()" id="signOut()">Log Out</button></li>
+      </div>
+      </div> -->
+        <!-- <li>Me
             <ul>
           <li><a href="#">My Account</a></li>
           <li><a href="#">Become a Tutor</a></li>
           <li><a href="index.html"><button onclick="signOut()" id="signOut()">Log Out</button></li>
         </ul>
-        </li>
+        </li> -->
         </ul>
+        <!-- <img src="images/me.png" alt="me"> -->
+    
       
 </nav>
+
+</div>
+<a href="index.html"><button onclick="signOut()" id="signOut()">Log Out</button></a>
+</div>
+
 </header>
+
 
 <body>
 
-<input type="text" name="search"/>
-<button type="submit">Search</button>
+<!-- <input type="text" name="search"/>
+<button type="submit">Search</button> -->
+
+<div class="wrap">
+  <div class="search">
+     <input type="text" class="searchTerm" placeholder="Search by keyword or subject ex: 'English' ">
+     <button type="submit" class="searchButton">
+       <i class="fa fa-search"></i>
+    </button>
+  </div>
+</div>
+
+<div id="tpage">
+<div id="filters">
+<h3>Filter by:</h3>
+<div id="avgfilter">
+<h4>Avg. Student Reviews</h4>
+
+  <figure>
+    <img src="images/five.png" alt="five">
+    <figcaption>& UP</figcaption>
+  </figure>
+  <figure>
+    <img src="images/four.png" alt="five">
+    <figcaption>& UP</figcaption>
+  </figure>
+  <figure>
+    <img src="images/three.png" alt="five">
+    <figcaption>& UP</figcaption>
+  </figure>
+  <figure>
+    <img src="images/two.png" alt="five">
+    <figcaption>& UP</figcaption>
+  </figure>
+  <figure>
+    <img src="images/one.png" alt="five">
+    <figcaption>& UP</figcaption>
+  </figure>
+</div>
+
+  <div id="restfil">
+    <div id=virtualor>
+    <div>
+<label for="virtual"> virtual</label>
+<input type="checkbox" id= "virtual" name="virtual" value="virtual">
+</div>
+
+ 
+<div>
+<label for="in-person"> in-person</label>
+<input type="checkbox" id="in-person" name="in-person" value="in-person">
+</div>
+</div>
+
+  
+<div>
+<label for="hs"> high school</label>
+  <input type="checkbox" id= "hs" name="highschool" value="highschool">
+  </div>
+  <div>
+  <label for="college"> college</label>
+<input type="checkbox" id="college" name="college" value="college">
+</div>
+  
+
+<div>
+  <label for="cost">hourly rate</label>
+<select name="cost" id="cost">
+  <option value="1015">$10-15</option>
+  <option value="1520">$15-20</option>
+  <option value="2030">$20-30</option>
+  <option value="30">30+</option>
+</select>
+</div>
+</div>
+</div>
+
+
+<div id="tresults">
+  <h2>Featured Tutors: </h2>
+
+  <a href="nina.html">
+<figure>
+  <img src="images/nina.png" alt="nina">
+  <figcaption><div> <h4>Nina Turner</h4></div>
+  <figure id="details">
+    <img src="images/five.png" alt="five">
+    <figcaption><div>$15</div>
+      <div>in-person</div>
+      <div>virtual</div>
+    </figcaption>
+  </figure>
+  <div><p>Hi! My name is Nina Turner and I tutor English and French. I go to Cornell University and major in Literature  and French. I am a rising senior. Previous internships I’ve had have been at the New York Times and Penguin Random House...</p></div>
+</figcaption>
+</figure>
+</a>
+
+
+
+<a href="russ.html">
+<figure>
+  <img src="images/ross.png" alt="nina">
+  <figcaption><div> <h4>Ross Murph</h4></div>
+  <figure id="details">
+    <img src="images/five.png" alt="five">
+    <figcaption><div>$15</div>
+      <div>in-person</div>
+      <div>virtual</div>
+    </figcaption>
+  </figure>
+  <div><p>Hi! My name is Russ Murph and I tutor Calculus and Algebra. I go to Northwestern University and major in Data Science. I am a sophomore. I interned at NASA last summer and I’m a TA for Introduction to Calculus. I can help with...</p></div>
+</figcaption>
+</figure>
+</a>
+</div>
+
+
+</div>
+
+
+
+
+
 
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
